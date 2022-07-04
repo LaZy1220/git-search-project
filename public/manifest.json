@@ -1,6 +1,6 @@
 {
-  "short_name": "recipe-project",
-  "name": "recipe-project for portfolio",
+  "short_name": "git-search-project",
+  "name": "git-search for portfolio",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

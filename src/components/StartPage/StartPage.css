@@ -1,0 +1,21 @@
+.start-page__text{
+    display: block;
+    width: 180px;
+    font-size: 22px;
+    text-align: center;
+    font-family: inter;
+}
+.start-page{
+    width: 100%;
+    min-height: calc(100vh - 73px);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+.start-page__body{
+    text-align: center 
+}

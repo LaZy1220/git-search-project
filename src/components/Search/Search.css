@@ -1,0 +1,17 @@
+input{
+    background-color: #FFFFFF;
+    background-image:url("./../../icons/image.png");
+    background-size: 15px;
+    background-position:19px;
+    padding-left:44px;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    width: 500px;
+    height: 40px;
+    border: 0px;
+    margin:16px 0px;
+}
+input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}

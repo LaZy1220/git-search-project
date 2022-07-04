@@ -1,0 +1,9 @@
+.home__body{
+    padding: 28px 0;
+    display: grid;
+    grid-template-columns:1.5fr 3fr;
+}
+span{
+    font-family: 
+    Inter;
+}

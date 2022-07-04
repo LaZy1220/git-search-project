@@ -1,0 +1,11 @@
+.header{
+    background-color: #0064EB;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.logo{
+    display: inline-block;
+    width: 40px;  
+    height: 40px;
+    margin: 16px 22px 16px 41px;
+}
