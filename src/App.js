@@ -3,16 +3,22 @@ import { NotFoundPage } from "./components/NotFoundPage/NotFoundPage";
 import { StartPage } from "./components/StartPage/StartPage";
 import { useState } from "react";
 import { UserInfo } from "./components/UserInfo/UserInfo";
+import {Routes,Route } from 'react-router-dom'
+import axios from "axios";
 
 function App() {
   const[user,setUser]=useState(null)
   const[repos,setRepos]=useState([])
-  const searchUser = (str)=>{
-    fetch(`https://api.github.com/users/${str}`)
-    .then(response =>response.json())
-    .then(data=>setUser(data))
-    console.log(user);
-}
+
+  const searchUser = async(str)=>{
+    const [firstRepsonse,secondResponse] = await Promise.all([
+      axios.get(`https://api.github.com/users/${str}`),
+      axios.get(`https://api.github.com/users/${str}/repos`)
+    ])
+    setUser(firstRepsonse.data)
+    setRepos(secondResponse.data)
+    console.log(user,repos);
+  }
   return (
     <div className="App">
         <Header 
@@ -24,5 +30,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

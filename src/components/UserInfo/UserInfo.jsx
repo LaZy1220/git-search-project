@@ -4,16 +4,17 @@ import Folower from "./../../icons/provate.png"
 
 export function UserInfo(props){
     const {avatar_url,
-            login,name,
+            login,
+            name,
             html_url,
             followers,
             following}=props
     return(
-        <div className='home conteiner'>
-            <div className='home__body'>
+        <div className='user-info conteiner'>
+            <div className='user-info__body'>
                 <div className='user-info'>
-                    <img src={avatar_url}/>
-                    <p>{name}</p>
+                    <img className='user-img' src={avatar_url}/>
+                    <p className='user-name'><b>{name}</b></p>
                     <a href={html_url} target='blank'>{login}</a>
                     <img src={Folowers} alt='not found'/>
                     <span>{followers} followers</span>
