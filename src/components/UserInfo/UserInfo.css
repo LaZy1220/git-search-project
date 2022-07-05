@@ -29,3 +29,22 @@
 h1{
     margin-bottom: 29px;
 }
+@media(max-width:660px){
+    .user-info__body{
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr;
+    }
+    h1{
+        margin-bottom: 29px;
+        text-align: center;
+    }
+    .user{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5%;
+    }
+  }
+  @media(max-width:475px){
+    .user{
+        display:block;}
+  }
