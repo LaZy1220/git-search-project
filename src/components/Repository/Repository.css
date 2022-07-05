@@ -1,0 +1,16 @@
+.repository{
+    background-color: white;
+    min-height: 112px;
+}
+.rep-link{
+    font-size: 24px;
+    color: #0064EB;
+    text-decoration: none;
+    padding-bottom: 16px;
+}
+.repository__body{
+    padding: 24px 32px;
+}
+.rep-description{
+    margin-top: 16px;
+}

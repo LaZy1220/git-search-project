@@ -25,7 +25,7 @@ function App() {
         user={user}
         searchUser={searchUser}/>
         {user
-        ?<UserInfo {...user}/>
+        ?<UserInfo {...user} repos={repos}/>
         :<StartPage/>}
     </div>
   );
